@@ -22,7 +22,7 @@ Usage:
 ======
 
 Add the following to the maven build plugins:
-
+```
 <build>
   <plugins>
     <plugin>
@@ -44,3 +44,4 @@ Add the following to the maven build plugins:
      </plugin>
   </plugins>
 </build>
+```
