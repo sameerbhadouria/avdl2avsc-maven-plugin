@@ -1,0 +1,19 @@
+@namespace("com.sb.plugins.test")
+
+protocol CarProtocol {
+
+    enum Type {
+        SPORTS, LUXURY, LARGE, MIDSIZE, COMPACT 
+    }
+
+    record Car{   
+        Type type = "SPORTS";
+        
+        string model;
+        string make;
+        
+        int year;
+        
+        union {string, null} vin;
+    }
+}
