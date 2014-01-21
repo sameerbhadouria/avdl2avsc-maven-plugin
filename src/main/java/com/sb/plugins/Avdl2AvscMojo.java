@@ -76,8 +76,9 @@ public class Avdl2AvscMojo extends org.apache.maven.plugin.AbstractMojo {
 	 * Generates the Avro schema avsc file from the specified avdl file.
 	 * 
 	 * @param avdlFile
+	 * @throws MojoExecutionException 
 	 */
-	private void generateSchema(File avdlFile) {
+	private void generateSchema(File avdlFile) throws MojoExecutionException {
 		Idl idlParser = null;
 		getLog().info("Found avdl file: " + avdlFile.getPath());
 		try {
@@ -95,9 +96,11 @@ public class Avdl2AvscMojo extends org.apache.maven.plugin.AbstractMojo {
 		} 
 		catch (IOException e) {
 			getLog().error("Failed to generate Avro schema for file: " + avdlFile.getName(), e);
+			throw new MojoExecutionException(e.getMessage());
 		} 
 		catch (ParseException e) {
 			getLog().error("Failed to generate Avro schema for file: " + avdlFile.getName(), e);
+			throw new MojoExecutionException(e.getMessage());
 		}
 		finally {
 			if (idlParser != null) {
