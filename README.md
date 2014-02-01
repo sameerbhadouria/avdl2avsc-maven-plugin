@@ -18,8 +18,21 @@ Note:
 =====
 Defining RPC messages in the avdl will be of no use in this case as schema files do not contain this information.
 
+
 Usage:
 ======
+
+Add the following to your maven repositories plugin:
+```
+<repository>
+  <id>Sameer Maven Repo</id>
+  <url>https://github.com/sameerbhadouria/mvn-repo/raw/master</url>
+  <snapshots>
+     <enabled>true</enabled>
+      <updatePolicy>always</updatePolicy>
+   </snapshots>
+</repository>
+```
 
 Add the following to the maven build plugins:
 ```
