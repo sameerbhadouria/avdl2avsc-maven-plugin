@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>Avro IDL to Avro Schema Maven Plugin</name>
+      <prefix>avdl2avsc</prefix>
+      <artifactId>avdl2avsc-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

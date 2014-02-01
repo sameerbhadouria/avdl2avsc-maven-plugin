@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.sb.plugins</groupId>
+  <artifactId>avdl2avsc-maven-plugin</artifactId>
+  <version>1.0</version>
+  <versioning>
+    <latest>1.0</latest>
+    <versions>
+      <version>1.0</version>
+    </versions>
+    <lastUpdated>20140201080909</lastUpdated>
+  </versioning>
+</metadata>
