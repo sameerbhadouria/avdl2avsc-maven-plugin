@@ -126,6 +126,7 @@
               <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
               <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
               <includes><include>**/*</include></includes>
+              <merge>true</merge>
               <repositoryName>avdl2avsc-maven-plugin</repositoryName>      <!-- github repo name -->
               <repositoryOwner>sameerbhadouria</repositoryOwner>    <!-- github username  -->
           </configuration>
