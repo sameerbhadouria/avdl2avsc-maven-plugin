@@ -10,6 +10,10 @@
   <name>Avro IDL to Avro Schema Maven Plugin</name>
 
   <url>https://github.com/sameerbhadouria/avdl2avsc-maven-plugin</url>
+  
+  <scm>
+    <url>https://github.com/sameerbhadouria/avdl2avsc-maven-plugin</url>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
